@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Kawre540 Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa ;
+}
+
+.bg-custom {
+  background-color: #0F0F0F ;
+}
+
+.navbar-brand img {
+  height: 50px; 
+  width: auto;
+  transition: transform 0.3s ease;  
+}
+
+.navbar-brand img:hover {
+ transform: scale(1.05);
+}
+
+.navbar-text a {
+  margin-right: 10px;
+  color: #DAC67C !important;
+  font-weight: 600;
+  border: none;
+}
+
+.navbar-text a:hover {
+  background-color: #DAC67C !important;
+  color: #0F0F0F !important;
+
+}
+
+.nav-link {
+  color: #DAC67C !important;
+  font-weight: 600;
+  margin-right: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out; 
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #DAC67C;
+  color: #0F0F0F !important;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Existing styles */
+.dropdown-menu {
+  background-color: #DAC67C;
+  color: #0F0F0F !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: none; 
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; 
+}
+
+.dropdown-item {
+  background-color: #DAC67C;
+  color: #0F0F0F !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 150px;
+  font-weight: 600;
+  margin-left: 4px;
+  border-radius: 5px;
+}
+
+.dropdown-item:hover {
+  background-color: #0F0F0F;
+  color: #DAC67C !important;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  background-color: #0F0F0F;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.jumbotron-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain; 
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+}
+
+.jumbotron-img:hover {
+  transform: scale(1.1); 
+  opacity: 0.9; 
+}
+
+.jumbotron-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.jumbotron-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.welcome-msg {
+  color: #B59153;
+  font-weight: 600;
+
+}
+
+#dynamic-heading {
+  color: #B59153;
+  font-size: 2.5em; 
+  margin-top: 20px;
+}
+#placename {
+  display: inline-block;
+  width: 100px; 
+  color: #800020;
+  text-align: center;
+}
+
+.book-now-button {
+  background-color: #B59153; 
+  color: #0F0F0F; 
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; 
+  transition: all 0.5s ease-in-out; 
+}
+
+.book-now-button:hover {
+  transform: scale(1.1); 
+}
+
+
+.navbar-toggler {
+  border:none;
+  color:#CDB26B !important;
+  background-color: #CDB26B !important; 
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23DAC67C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  
+}
+
+
+
+.form-section {
+  background-color: #f8f9fa;
+  border: 2px solid #000;
+  padding: 20px;
+  font-weight: 600;
+  color: #004063;
+  height: 100%;
+  border-radius: 8px;
+  font-family: "Afacad Flux", system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.img-section img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.btn-nice{
+  background-color: #004063;
+  color: #f8f9fa;
+}
+.btn-nice:hover{
+  color: #FF8E01 !important;
+}
+
+
+.card-body {
+  padding: 15px;
+}
+
+.card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Navbar custom styling */
+.navbar {
+  background-color: #0F0F0F;
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Dropdown menu adjustments */
+.dropdown-item {
+  font-size: 14px;
+}
+
+
+
+/* Container full width */
+#Packages {
+  width: 100%;
+}
+
+/* H1 Styling */
+#Packages h1,  #Services h1  {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Afacad Flux", system-ui;
+  color: #FF8E01;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#Packages h1 span, #Services h1 span {
+  color: #004063;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.package-image {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.place-name {
+  font-size: 1.5rem;
+  font-family: "Afacad Flux", system-ui;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.attractions, .price, .rating {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-family: "Afacad Flux", system-ui;
+}
+
+/* Rating styling */
+.stars i {
+  color: #000; /* black color for stars */
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+/* Button styling */
+.book-now-btn {
+  background: white;
+  border: none;
+  color: #000;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  font-family: "Afacad Flux", system-ui;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.book-now-btn:hover {
+  background: #385db0;
+  font-weight: 600;
+}
+
+/* Responsive grid */
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .padd{
+    margin-top: 20px;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 0); }
+  25% { transform: translate(-1px, 0); }
+  50% { transform: translate(1px, 0); }
+  75% { transform: translate(-1px, 0); }
+  100% { transform: translate(1px, 0); }
+}
+
+.card-body i:hover {
+  animation: shake 0.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.card-body i {
+  opacity: 0.5; 
+}
+
+/*------------------------------checkpoint-3----------------------------------------*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  padding: 10px; 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: none; 
+  background-color: black; 
+  opacity: 0.5;
+  border-radius: 50%; 
+  padding: 10px; 
+
+}
+
+
+
+
+#about-us {
+  width: 100%;
+  padding: 20px 0; 
+  font-family: "Afacad Flux", system-ui;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.justifying {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #about-us h1 {
+    font-size: 2rem;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .col-lg-6 {
+    text-align: left;
+    margin: 10px;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  background-color: #222;
+  color: #DAC67C;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: #DAC67C;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* General hover effect for all icons */
+.footer .social-icons a:hover {
+  color: #DAC67C;
+}
+
+.footer .social-icons a.fa-twitter:hover {
+  animation: fly 1s ease-in-out;
+  color: #DAC67C;
+}
+
+/* Keyframe animation for "flying" effect */
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.footer .copyright {
+color: #DAC67C;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer .brand-name {
+  font-size: 24px;
+color: #DAC67C;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <div class="container-fluid">
+            <!-- Brand Name and Logo -->
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-container">
+                    <img src="images/logo-image.png" alt="Logo-img" class="brand-logo">
+                    <span class="brand-name">Kawre540 Adventures</span>
+                </div>
+            </a>
+
+            <!-- Toggler Button for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book"><i class="fa-solid fa-calendar-day"></i> Book</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#packages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-plane"></i> Packages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">United States</a></li>
+                            <li><a class="dropdown-item" href="#">India</a></li>
+                            <li><a class="dropdown-item" href="#">France</a></li>
+                            <li><a class="dropdown-item" href="#">Germany</a></li>
+                            <li><a class="dropdown-item" href="#">Dubai</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><i class="fa-solid fa-handshake"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus"><i class="fa-solid fa-info-circle"></i> About</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a class="btn btn-outline-primary" href="login.html"><i class="fa-solid fa-sign-in-alt"></i> Login</a>
+                    <a class="btn btn-outline-success ml-2" href="register.html"><i class="fa-solid fa-user-plus"></i> Register</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Image with Text -->
+    <div class="jumbotron">
+        <img src="images/bg-img.png" alt="Jumbotron Image" class="jumbotron-img">
+        <div class="jumbotron-text">
+            <h2 class="welcome-msg"> Welcome to Kawre540 Adventures </h2>
+            <h1 id="dynamic-heading">Visit <span id="placename">India</span></h1>
+            <button class="book-now-button">Book Now</button>
+        </div>
+    </div>
+
+    <script>
+        // Dynamic Country Name Change Function
+        const countryNames = ['United States', 'India', 'France', 'Germany', 'Australia', 'Japan','Dubai','Europe'];
+        let countryIndex = 0;
+        setInterval(() => {
+            document.getElementById('placename').textContent = countryNames[countryIndex];
+            countryIndex = (countryIndex + 1) % countryNames.length;
+        }, 2000); // Changes every 0.2 seconds
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+<!---------------------------------------------------------------------- Checkpoint 2 ------------------------------------------------------------------------->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaware540 Adventures</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Section A: Form and Image */
+        .section-a {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .left-section, .right-section {
+            width: 48%;
+        }
+
+        .left-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #ff5733;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e04e2a;
+        }
+
+        textarea {
+            min-height: 100px;
+            max-height: 200px;
+        }
+
+        /* Section B: Package Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .package-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .package-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-card .content {
+            padding: 15px;
+        }
+
+        .package-card .content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .package-card .content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .package-card .content .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .package-card .content .rating {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #ff9800;
+        }
+
+        .package-card .content .btn {
+            padding: 10px;
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .package-card .content .btn:hover {
+            background-color: #e04e2a;
+        }
+
+        /* Section C: Services */
+        .services-section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .services-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery, .services-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery, .services-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section A: Form and Image -->
+    <div class="section-a">
+        <!-- Left Section: Image -->
+        <div class="left-section">
+           <img src="images/bg-left2.avif" alt="Brand Image">
+        </div>
+        
+        <!-- Right Section: Form -->
+        <div class="right-section">
+            <h2>Book Your Trip</h2>
+            <form id="booking-form">
+                <!-- Where to Dropdown -->
+                <label for="place">Where to:</label>
+                <select id="place" name="place" required>
+                    <option value="">Select a place</option>
+                    <option value="USA">United States</option>
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                </select>
+
+                <!-- How Many Persons -->
+                <label for="persons">How many persons:</label>
+                <input type="number" id="persons" name="persons" min="1" required>
+
+                <!-- Start Date -->
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" min="2025-03-10" required>
+
+                <!-- End Date -->
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" min="" required>
+
+                <!-- Description -->
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required minlength="50" maxlength="500"></textarea>
+
+                <!-- Book Now Button -->
+                <button type="button" onclick="submitForm()">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Section B: Package Gallery -->
+    <h2>Our Travel Packages</h2>
+    <div class="gallery">
+        <!-- Package 1 -->
+        <div class="package-card">
+            <img src="images/place1.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Paris, France</h3>
+                <p>Explore the beauty of Paris with iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+            <img src="images/place3.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>New York, USA</h3>
+                <p>Experience the hustle and bustle of New York with Broadway shows, Central Park, and the Statue of Liberty.</p>
+                <div class="price">$1500 USD</div>
+                <div class="rating">★★★★★</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+            <img src="images/place2.jpg" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Tokyo, Japan</h3>
+                <p>Discover the blend of traditional and modern Japan, including Tokyo Tower, Akihabara, and beautiful temples.</p>
+                <div class="price">$1300 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="package-card">
+            <img src="images/place7.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Kathmandu, Nepal</h3>
+                <p>Pashupatinath Temple, Boudhanath Stupa, Swayambhunath, Pokhara, MountEverest.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 5 -->
+        <div class="package-card">
+            <img src="images/place8.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>London, UK</h3>
+                <p>Big Ben, London Eye, Tower of London, Buckingham Palace.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 6 -->
+        <div class="package-card">
+            <img src="images/place6.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Dubai, UAE</h3>
+                <p>Burj Khalifa, Palm Jumeirah, Dubai Mall, Desert Safari.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+
+        <!-- Package 7 -->
+        <div class="package-card">
+            <img src="images/place5.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Sydney, Australia</h3>
+                <p>Sydney Opera House, Bondi Beach, Taronga Zoo, Bondi Beach .</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 8 -->
+        <div class="package-card">
+            <img src="images/place9.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Santorini, Greece</h3>
+                <p>SOia Village, Red Beach, Akrotiri Archaeological Site, Santorini Caldera.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Package 9 -->
+        <div class="package-card">
+            <img src="images/place4.avif" alt="Place 1" class="package-image">
+            <div class="content">
+                <h3>Rome, Italy</h3>
+                <p>Colosseum, Vatican City, Roman Forum, Trevi Fountain.</p>
+                <div class="price">$1200 USD</div>
+                <div class="rating">★★★★☆</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C: Services -->
+    <div class="services-section">
+        <h2>Our Services</h2>
+        
+        <div class="services-container">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <i class="fas fa-dollar fa-3x mb-3 mt-3"></i>
+                <h3>Affordable Hotels</h3>
+                <p>Stay in comfortable, well-located, and affordable hotels during your travels, ensuring an excellent experience at great rates.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <i class="fas fa-wine-glass fa-3x mb-3 mt-3"></i>
+                <h3>Food & Drinks</h3>
+                <p>Enjoy delicious meals and refreshing drinks at top-notch restaurants, included in many of our travel packages.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <i class="fas fa-fingerprint fa-3x mb-3 mt-3"></i>
+                <h3>Safety Guide</h3>
+                <p>Our experienced safety guides ensure your well-being, providing tips and advice for safe travel at all times.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <i class="fas fa-suitcase fa-3x mb-3 mt-3"></i>
+                <h3>Travel Insurance</h3>
+                <p>We offer reliable travel insurance for worry-free vacations and adventures.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <i class="fas fa-headset fa-3x mb-3 mt-3"></i>
+                <h3>24/7 Customer Support</h3>
+                <p>Reach out to our customer support team anytime for assistance during your trip.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <i class="fas fa-hiking fa-3x mb-3 mt-3"></i>
+                <h3>Adventure Tours</h3>
+                <p>>Explore thrilling adventure tours and activities tailored for adventure seekers.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Function to update minimum start and end date constraints
+        window.onload = function () {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById("start-date").setAttribute("min", today);
+            document.getElementById("end-date").setAttribute("min", today);
+        };
+
+        // Function to submit the form
+        function submitForm() {
+            const form = document.getElementById("booking-form");
+
+            // Check if all fields are filled
+            if (form.checkValidity()) {
+                alert("Booking Successful");
+                form.reset();
+            } else {
+                alert("Please fill out all fields correctly.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!---------------------------------------------------------------------- Checkpoint 3 ------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Kawre540 Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  padding: 10px; 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: none; 
+  background-color: black; 
+  opacity: 0.5;
+  border-radius: 50%; 
+  padding: 10px; 
+
+}
+
+
+
+
+#about-us {
+  width: 100%;
+  padding: 20px 0; 
+  font-family: "Afacad Flux", system-ui;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.justifying {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #about-us h1 {
+    font-size: 2rem;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .col-lg-6 {
+    text-align: left;
+    margin: 10px;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* General hover effect for all icons */
+.footer .social-icons a:hover {
+  color: #ffc371;
+}
+
+.footer .social-icons a.fa-twitter:hover {
+  animation: fly 1s ease-in-out;
+  color: #1da1f2; 
+}
+
+/* Keyframe animation for "flying" effect */
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer .brand-name {
+  font-size: 24px;
+color: #ffffff
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+</style>
+	<section id="services" class="py-3" style="background-color:#f8f9fa; font-family: 'Afacad Flux';">
+		<div class="container">
+			<h1 class="text-center mb-5" style="font-weight: bold; text-align: center; color: #343a40;">Our <span
+					style="color: #ff5f6d;">Gallery</span></h1>
+			<div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<!-- First Slide -->
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t1.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t2.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t3.avif">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t4.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t5.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t6.avif">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t7.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t8.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t9.avif">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t10.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t11.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t12.avif">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t13.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t14.avif">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card text-center">
+									<div class="card-body">
+										<img src="images/t15.avif">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Carousel Controls -->
+					<a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+	</section>
+
+	<!-- About Us Section -->
+	<section id="about-us" class="container my-3" style="background-color:#f8f9fa;">
+		<h1 class="text-center mb-5" style="font-weight: bold; text-align: center; color: #343a40;">About <span
+				style="color: #ff5f6d;">Us</span></h1>
+		<div class="row  border-0">
+			<!-- Left Column: Image -->
+			<div class="col-lg-6 mb-4 mb-lg-0 align-items-center">
+				<img src="images/about-img.avif" alt="About Us"
+					class="img-fluid rounded shadow-lg w-100 cursor-pointer">
+			</div>
+			<!-- Right Column: Text Content -->
+			<div class="col-lg-6 justifying">
+				<p class="font-weight-bold" style="font-size: 1.3rem; color: #343a40;">
+					<strong>Established:</strong> 2025
+				</p>
+				<p style="line-height: 1.6; color: #555;">
+					We are a dedicated company committed to providing the best products and services to our customers.
+					Our team consists of experienced professionals who are passionate about their work.
+				</p>
+				<p style="line-height: 1.6; color: #555;">
+					At <strong>Kawre540 Adventures</strong>, we believe in quality and customer satisfaction. Our vision
+					is to become a leader in our industry by continually improving our products and services.
+				</p>
+				<p style="line-height: 1.6; color: #555;">
+					For more information, feel free to <a href="#"
+						style="color: #ff5f6d; text-decoration: none;">contact us</a> or visit our website.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="container">
+			<div class="brand-name">Ｋａｗｒｅ５４０ Ａｄｖｅｎｔｕｒｅｓ</div>
+			<div class="social-icons">
+				<a href="#" class="fab fa-facebook-f"></a>
+				<a href="#" class="fab fa-instagram"></a>
+				<a href="#" class="fab fa-twitter"></a>
+				<a href="#" class="fab fa-linkedin-in"></a>
+			</div>
+			<div class="copyright">
+				&copy; 𝟸𝟶𝟸5 𝙺𝚊𝚠𝚛𝚎𝟻𝟺𝟶 𝙰𝚍𝚟𝚎𝚗𝚝𝚞𝚛𝚎𝚜. 𝙰𝚕𝚕 𝚁𝚒𝚐𝚑𝚝𝚜 𝚁𝚎𝚜𝚎𝚛𝚟𝚎𝚍.
+			</div>
+		</div>
+
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
